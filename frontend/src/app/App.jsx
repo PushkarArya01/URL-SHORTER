@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:5173/api/url";
-const SHORT_URL_BASE = "http://localhost:3000";
+const BACKEND_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_URL = `${BACKEND_URL}/api/url`;
+const SHORT_URL_BASE = BACKEND_URL;
 
 function App() {
   const [urls, setUrls] = useState([]);
