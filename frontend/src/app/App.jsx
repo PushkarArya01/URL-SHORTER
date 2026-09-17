@@ -131,7 +131,7 @@ function App() {
 
     const interval = setInterval(() => {
       fetchUrls();
-    }, 3000);
+    }, 60000);
 
     const handleFocus = () => fetchUrls();
 
@@ -145,7 +145,7 @@ function App() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <div className="absolute inset-0 -z-0 overflow-hidden">
+      <div className="absolute inset-0-z-0 overflow-hidden">
         <div className="absolute left-1/4 top-0 h-72 w-72 rounded-full bg-orange-500/10 blur-3xl" />
         <div className="absolute right-1/4 top-1/3 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
       </div>
