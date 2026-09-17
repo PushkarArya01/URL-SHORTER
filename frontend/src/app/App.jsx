@@ -131,7 +131,7 @@ function App() {
 
     const interval = setInterval(() => {
       fetchUrls();
-    }, 60000);
+    }, 120000);
 
     const handleFocus = () => fetchUrls();
 
